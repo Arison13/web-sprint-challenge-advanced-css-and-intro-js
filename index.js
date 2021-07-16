@@ -244,6 +244,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/*Your Code Here*/) {
   /*Your Code Here*/
+  //i dont know how to make it so that it picks out the names of the artists, i tried and if statement but couldnt really make it work.
 }
 
 
@@ -258,9 +259,10 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array,number) {
-  /*Your Code Here*/
+  array.pop([number]);
+  return array.length
 }
-
+console.log('task 5:',removeArtist(artists,[0]));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -279,8 +281,19 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-  
+  const newObject = {
+    "id": 20,
+    "name": "Your Name Here", 
+    "years": "Your Birth Year - current day",
+    "genre": "Web Design", 
+    "nationality": "Your Nationality Here",
+    "bio": "Add 1-2 sentences (or use lorem ipsum)"
+  }
+  array.push(newObject)
+  return artists
+  //i believe this is the correct code but it doesn't pass the test,in my other console the output is right but i dont know if im wrong somewhere.
 }
+console.log('task 6', addArtist(artists));
 
 
 
@@ -292,6 +305,7 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
+//i dont get this one: i tried using a if statement and it didnt work, and i tried using a loop but couldnt make it work either.
 }
 
 
